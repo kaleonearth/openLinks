@@ -13,6 +13,7 @@ pip3 install -r requirements.txt
 - Ensure we have a properly formatted *credentials.json* file in the root directory.  In your Google console we will need to create a *Service Account* and *Service Account Key*, which will be linked to a project. This will give us the *credentials.json* file we need. 
 **Steps:** 
 - Create a Google Sheet with the following column format: 
+
 | Employer     | Position       | Link  |
 |--------------|----------------|-------|
 | Employer1    | Engineer       | Link1 |
@@ -57,6 +58,7 @@ pip3 install -r requirements.txt
 }
 </pre>
 </code>
+
 - If your Google sheet URL is: `https://docs.google.com/spreadsheets/d/1x9piz0Jwwai-It7KS8ng_floXgXNxLlOaBCDeFG_aa/edit?gid=0#gid=0` then the *SS_ID* above will be: `1x9piz0Jwwai-It7KS8ng_floXgXNxLlOaBCDeFG_aa`.
 - Run the main.py file.
 <pre>
