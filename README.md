@@ -10,16 +10,16 @@ pip3 install -r requirements.txt
 </pre>
 
 **Usage:**
-- Ensure we have a properly formatted *credentials.json* file in the root directory.  This will look like: 
+- Ensure we have a properly formatted *credentials.json* file in the root directory.  It can be created here in your Google console. This will look like: 
 <pre>
 <code>
 {
   "type": "service_account",
   "project_id": "employment-automation",
-  "private_key_id": "e7133b0ae4ead42dac03d31a36d17821607d7b41",
+  "private_key_id": "<KEY_ID>>",
   "private_key": "-----BEGIN PRIVATE KEY-----\<KEY>\n-----END PRIVATE KEY-----\n",
-  "client_email": "employmentautomation@employment-automation.iam.gserviceaccount.com",
-  "client_id": "101367580796631412044",
+  "client_email": "<email.iam.gserviceaccount.com>",
+  "client_id": "<CLIENT_ID>",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
