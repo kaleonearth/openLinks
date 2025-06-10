@@ -11,7 +11,15 @@ pip3 install -r requirements.txt
 
 **Usage:**
 - Ensure we have a properly formatted *credentials.json* file in the root directory.  In your Google console we will need to create a *Service Account* and *Service Account Key*, which will be linked to a project. This will give us the *credentials.json* file we need. 
-- **Steps:** ## TODO: Give instructions on how to create service account and key (projectt too??)
+**Steps:** 
+## TODO: Give instructions on how to create service account and key (projectt too??)
+- Create a Google Sheet with the following column format: 
+| Employer     | Position       | Link  |
+|--------------|----------------|-------|
+| Employer1    | Engineer       | Link1 |
+| Employer2    | Designer       | Link2 |
+
+- Create a Project and Service Account/Key Pair:
     - Ensure you have created a project where we can assign a service account and key.  Once created, select that project in the [Google Cloud Console](https://console.cloud.google.com).
     - Service Accounts can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts).
     - Click *Manage Service Accounts*
@@ -24,7 +32,7 @@ pip3 install -r requirements.txt
     - In the [Service Accounts Page](https://console.cloud.google.com/iam-admin/serviceaccounts), click the link for the *Service Account* we will be using for authentication.
     - Click the *Keys* tab.
     - Click *Add Key*.  Select *JSON*, then click *Create*. A JSON file will be created that we will use as *credentials.json*. This will be automatically downloaded into your Downloads directory.
-- Once the key is created, formatting should look like: 
+    - Once the key is created, formatting should look like: 
 <pre>
 <code>
 {
@@ -48,6 +56,13 @@ pip3 install -r requirements.txt
 {
      "GOOGLE_SHEET_KEY": "SS_ID"
 }
+</pre>
+</code>
+- If your Google sheet URL is: `https://docs.google.com/spreadsheets/d/1x9piz0Jwwai-It7KS8ng_floXgXNxLlOaBCDeFG_aa/edit?gid=0#gid=0` then the *SS_ID* above will be: `1x9piz0Jwwai-It7KS8ng_floXgXNxLlOaBCDeFG_aa`.
+- Run the main.py file.
+<pre>
+<code>
+python3 main.py
 </pre>
 </code>
 
