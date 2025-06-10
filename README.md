@@ -25,11 +25,11 @@ pip3 install -r requirements.txt
 <code>
 {
   "type": "service_account",
-  "project_id": "<PROJECT_ID>",
-  "private_key_id": "<PRIVATE_KEY_ID>",
-  "private_key": "-----BEGIN PRIVATE KEY-----\<KEY>\n-----END PRIVATE KEY-----\n",
-  "client_email": "<EMAIL>.iam.gserviceaccount.com",
-  "client_id": "<CLIENTID>",
+  "project_id": "PROJECT_ID",
+  "private_key_id": "PRIVATE_KEY_ID",
+  "private_key": "-----BEGIN PRIVATE KEY-----\KEY\n-----END PRIVATE KEY-----\n",
+  "client_email": "EMAIL.iam.gserviceaccount.com",
+  "client_id": "CLIENTID",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
@@ -42,7 +42,7 @@ pip3 install -r requirements.txt
 <pre>
 <code>
 {
-     "GOOGLE_SHEET_KEY": "<SS_ID>"
+     "GOOGLE_SHEET_KEY": "SS_ID"
 }
 </pre>
 </code>
