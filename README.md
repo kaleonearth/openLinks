@@ -1,5 +1,5 @@
 # openLinks
-## A Script to open Job Links in Google Sheet
+## A Script to open Job Links in a Google Sheet to optimize the job application process.
 **Purpose/Goal:** This script is designed to take a list of links in a Google Sheet and open them in preparation for applying to to multiple jobs.  It will open a new instance of Chrome, then open each link in a new tab.
 **Installation:**
 <pre>
