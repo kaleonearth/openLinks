@@ -10,16 +10,17 @@ pip3 install -r requirements.txt
 </pre>
 
 **Usage:**
-- Ensure we have a properly formatted *credentials.json* file in the root directory.  It can be created here in your Google console. This will look like: 
+- Ensure we have a properly formatted *credentials.json* file in the root directory.  It can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts?) in your Google console we will need to create a *Service Account* and *Service Account Key*, which will be linked to a project. This will give us the *credentials.json* file we need. 
+- Once created, formatting should look like: 
 <pre>
 <code>
 {
   "type": "service_account",
-  "project_id": "employment-automation",
-  "private_key_id": "<KEY_ID>>",
+  "project_id": "<PROJECT_ID>",
+  "private_key_id": "<PRIVATE_KEY_ID>",
   "private_key": "-----BEGIN PRIVATE KEY-----\<KEY>\n-----END PRIVATE KEY-----\n",
-  "client_email": "<email.iam.gserviceaccount.com>",
-  "client_id": "<CLIENT_ID>",
+  "client_email": "<EMAIL>.iam.gserviceaccount.com",
+  "client_id": "<CLIENTID>",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
@@ -28,6 +29,15 @@ pip3 install -r requirements.txt
 }
 </code>
 </pre>
+- Create a *config.json* file that has the Google Sheets ID.  This can be found in the URL of the sheet **Expand Upon This**
+<pre>
+<code>
+{
+     "GOOGLE_SHEET_KEY": "<SS_ID>"
+}
+</pre>
+</code>
+
 
 ## Tips:
 - You can use an autofill service (like [Simplify](simplify.jobs)) to fill the forms more quickly.
