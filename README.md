@@ -12,7 +12,8 @@ pip3 install -r requirements.txt
 **Usage:**
 - Ensure we have a properly formatted *credentials.json* file in the root directory.  In your Google console we will need to create a *Service Account* and *Service Account Key*, which will be linked to a project. This will give us the *credentials.json* file we need. 
 - **Steps:** ## TODO: Give instructions on how to create service account and key (projectt too??)
-    - It can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts) 
+    - Ensure you have created a project where we can assign a service account and key.  Once created, select that project in the [Google Cloud Console](https://console.cloud.google.com).
+    - Service Accounts can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts).
     - Click *Manage Service Accounts*
     - Click *Create Service Account*
     - Give the Service Account a relevant name, a Service Account ID if not satisfied with the one that's generated, and Service Account Description.
@@ -20,7 +21,10 @@ pip3 install -r requirements.txt
     - Select the role of *Editor*.
     - Click *Continue*.
     - Click *Done*. 
-- Once created, formatting should look like: 
+    - In the [Service Accounts Page](https://console.cloud.google.com/iam-admin/serviceaccounts), click the link for the *Service Account* we will be using for authentication.
+    - Click the *Keys* tab.
+    - Click *Add Key*.  Select *JSON*, then click *Create*. A JSON file will be created that we will use as *credentials.json*. This will be automatically downloaded into your Downloads directory.
+- Once the key is created, formatting should look like: 
 <pre>
 <code>
 {
