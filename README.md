@@ -50,6 +50,7 @@ pip3 install -r requirements.txt
 }
 </code>
 </pre>
+- Share SS created above with Service Account email address by clicking "File > Share With Others" 
 - Create a *config.json* file that has the Google Sheets ID.  This can be found in the URL of the sheet, see below.
 <pre>
 <code>
