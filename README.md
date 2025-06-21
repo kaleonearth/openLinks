@@ -12,12 +12,18 @@ pip3 install -r requirements.txt
 **Usage:**
 - Ensure we have a properly formatted *credentials.json* file in the root directory.  In your Google console we will need to create a *Service Account* and *Service Account Key*, which will be linked to a project. This will give us the *credentials.json* file we need. 
 **Steps:** 
-- Create a Google Sheet with the following column format: 
+- Create a 'Job Automation' Google Sheet with the following column format: 
 
 | Employer     | Position       | Link  |
 |--------------|----------------|-------|
 | Employer1    | Engineer       | Link1 |
 | Employer2    | Designer       | Link2 |
+
+- Create a 'Employment'/'Jobs Applied For' Google sheet with the following column format: 
+| Employer     | Position       | Link  | Date Applied  |
+|--------------|----------------|-------| ------------- |
+| Employer1    | Engineer       | Link1 | Date          |
+| Employer2    | Designer       | Link2 | Date          |
 
 - Create a Project and Service Account/Key Pair:
     - Ensure you have created a project where we can assign a service account and key.  Once created, select that project in the [Google Cloud Console](https://console.cloud.google.com).
