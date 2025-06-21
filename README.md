@@ -27,19 +27,19 @@ pip3 install -r requirements.txt
 | Employer2    | Designer       | Link2 | Date          |
 
 - Create a Project and Service Account/Key Pair:
-    - Ensure you have created a project where we can assign a service account and key.  Once created, select that project in the [Google Cloud Console](https://console.cloud.google.com).
-    - Service Accounts can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts).
-    - Click *Manage Service Accounts*
-    - Click *Create Service Account*
-    - Give the Service Account a relevant name, a Service Account ID if not satisfied with the one that's generated, and Service Account Description.
-    - Click *Create and Continue*
-    - Select the role of *Editor*.
-    - Click *Continue*.
-    - Click *Done*. 
-    - In the [Service Accounts Page](https://console.cloud.google.com/iam-admin/serviceaccounts), click the link for the *Service Account* we will be using for authentication.
-    - Click the *Keys* tab.
-    - Click *Add Key*.  Select *JSON*, then click *Create*. A JSON file will be created that we will use as *credentials.json*. This will be automatically downloaded into your Downloads directory.
-    - Once the key is created, formatting should look like: 
+    1. Ensure you have created a project where we can assign a service account and key.  Once created, select that project in the [Google Cloud Console](https://console.cloud.google.com).
+    2. Service Accounts can be created [here](https://console.cloud.google.com/iam-admin/serviceaccounts).
+    3. Click *Manage Service Accounts*
+    4. Click *Create Service Account*
+    5. Give the Service Account a relevant name, a Service Account ID if not satisfied with the one that's generated, and Service Account Description.
+    6. Click *Create and Continue*
+    7. Select the role of *Editor*.
+    8. Click *Continue*.
+    9. Click *Done*. 
+    10. In the [Service Accounts Page](https://console.cloud.google.com/iam-admin/serviceaccounts), click the link for the *Service Account* we will be using for authentication.
+    11. Click the *Keys* tab.
+    12. Click *Add Key*.  Select *JSON*, then click *Create*. A JSON file will be created that we will use as *credentials.json*. This will be automatically downloaded into your Downloads directory.
+      - Once the key is created, formatting should look like: 
 <pre>
 <code>
 {
