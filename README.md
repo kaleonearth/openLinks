@@ -20,6 +20,7 @@ pip3 install -r requirements.txt
 | Employer2    | Designer       | Link2 |
 
 - Create a 'Employment'/'Jobs Applied For' Google sheet with the following column format: 
+
 | Employer     | Position       | Link  | Date Applied  |
 |--------------|----------------|-------|---------------|
 | Employer1    | Engineer       | Link1 | Date          |
