@@ -55,7 +55,8 @@ pip3 install -r requirements.txt
 <pre>
 <code>
 {
-     "GOOGLE_SHEET_KEY": "SS_ID"
+    "AUTOMATION_SHEET_KEY": "JOB_AUTOMATION_SS_KEY",
+    "EMPLOYMENT_SHEET_KEY": "EMPLOYMENT_SS_KEY"
 }
 </pre>
 </code>

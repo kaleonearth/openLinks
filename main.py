@@ -1,6 +1,6 @@
 import json
 import os
-from openlinks import open_urls
+from openlinks import open_urls, update_job_search_sheet
 
 # --------- Load Config ---------
 def get_config():
@@ -15,8 +15,9 @@ def get_config():
 
 def main():
     config=get_config()
-    GOOGLE_SHEET_KEY = config["GOOGLE_SHEET_KEY"]
-    open_urls(GOOGLE_SHEET_KEY)
+    AUTOMATION_SHEET_KEY = config["AUTOMATION_SHEET_KEY"]
+    EMPLOYMENT_SHEET_KEY = config["EMPLOYMENT_SHEET_KEY"]
+    open_urls(AUTOMATION_SHEET_KEY, EMPLOYMENT_SHEET_KEY)
 
 if __name__ == "__main__":
     main()
